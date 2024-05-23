@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .login-container {
+      background-color: #fff;
+      padding: 60px;
+      border-radius: 8px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .login-container h2 {
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .login-button {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    .login-button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form name="login" method="post" action="../Models/login.php">
+      <div class="form-group">
+        <label for="usuario">Usuario</label>
+        <input required placeholder="Ingrese el usuario" name="usuario" type="text" id="usuario" />
+      </div>
+      <div class="form-group">
+        <label for="contrasena">Contraseña</label>
+        <input required placeholder="Ingrese contraseña" name="contrasena" type="password" id="contrasena" />
+      </div>
+      <div class="form-group">
+        <input type="submit" name="Submit" class="login-button" value="Iniciar Sesión" />
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>
